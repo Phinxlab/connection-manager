@@ -17,7 +17,7 @@
   "homepage": "https://bitbucket.org/fleetstudio/connection-manager#readme",
   "keywords": [],
   "license": "ISC",
-  "main": "index.js",
+  "main": "./dist/main.js",
   "name": "@phinxlab/connection-manager-public",
   "repository": {
     "type": "git",
@@ -29,5 +29,5 @@
     "prebuild": "parcel build index.js --target node --no-minify",
     "build": "javascript-obfuscator dist/index.js --output dist/main.js && rm dist/index.js dist/index.js.map"
   },
-  "version": "1.1.1"
+  "version": "1.1.2"
 }
