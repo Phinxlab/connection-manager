@@ -1,0 +1,33 @@
+{
+  "author": {
+    "name": "phinxlab"
+  },
+  "dependencies": {
+    "@phinxlab/config-manager-public": "^1.1.1",
+    "@phinxlab/log-manager-public": "^1.1.0",
+    "axios": "^0.17.1",
+    "mysql": "^2.17.1",
+    "pg": "^7.4.3",
+    "javascript-obfuscator": "^0.18.1"
+  },
+  "description": "Library for connect to Data Bases",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "homepage": "https://bitbucket.org/fleetstudio/connection-manager#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@phinxlab/connection-manager-public",
+  "repository": {
+    "type": "git",
+    "url": "git+https://joseGonza@bitbucket.org/fleetstudio/connection-manager.git"
+  },
+  "scope": "@phinxlab",
+  "scripts": {
+    "start": "node index.js",
+    "prebuild": "parcel build index.js --target node --no-minify",
+    "build": "javascript-obfuscator dist/index.js --output dist/main.js && rm dist/index.js dist/index.js.map"
+  },
+  "version": "1.1.0"
+}
