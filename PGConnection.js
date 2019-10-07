@@ -1,5 +1,5 @@
-const Global = require('@phinxlab/config-manager');
-const Log = new (require('@phinxlab/log-manager'))('PGConnection');
+const Global = require('@phinxlab/config-manager-public');
+const Log = new (require('@phinxlab/log-manager-public'))('PGConnection');
 const {Client, Pool} = require('pg');
 
 class PGConnection {

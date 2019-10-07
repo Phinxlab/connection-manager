@@ -1,5 +1,5 @@
-const Global = require('@phinxlab/config-manager');
-const Log = new (require('@phinxlab/log-manager'))('MysqlConnection');
+const Global = require('@phinxlab/config-manager-public');
+const Log = new (require('@phinxlab/log-manager-public'))('MysqlConnection');
 const { createConnection, createPool } = require('mysql');
 
 class MysqlConnection {
